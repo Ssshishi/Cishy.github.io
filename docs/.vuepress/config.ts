@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
-import { DoingThemeConfig } from '../../doing/types'
+import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
@@ -8,8 +8,8 @@ import htmlModules from './config/htmlModules' // 自定义插入的html块
 const DOMAIN_NAME = '' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
-export default defineConfig4CustomTheme<DoingThemeConfig>({
-  theme: resolve(__dirname, '../../doing'), // 使用本地主题包
+export default defineConfig4CustomTheme<VdoingThemeConfig>({
+  theme: 'vdoing', // 使用本地主题包
 
   locales: {
     '/': {
@@ -19,8 +19,6 @@ export default defineConfig4CustomTheme<DoingThemeConfig>({
     }
   },
 
-  // base: "/", // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
-
   // 主题配置
   themeConfig: {
     // 导航配置
@@ -28,7 +26,7 @@ export default defineConfig4CustomTheme<DoingThemeConfig>({
       { text: '首页', link: '/' },
       {
         text: '前端',
-        link: '/web/', //目录页链接，此处link是doing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
@@ -116,7 +114,7 @@ export default defineConfig4CustomTheme<DoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-doing', // 导航栏右侧生成Github链接
+    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -124,7 +122,7 @@ export default defineConfig4CustomTheme<DoingThemeConfig>({
     editLinks: true, // 启用编辑
     editLinkText: '编辑',
 
-    //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
+    //*** 以下是vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
     // category: false, // 是否打开分类功能，默认true
     // tag: false, // 是否打开标签功能，默认true
@@ -200,7 +198,7 @@ export default defineConfig4CustomTheme<DoingThemeConfig>({
     footer: {
       createYear: 2019, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-doing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
@@ -315,7 +313,7 @@ export default defineConfig4CustomTheme<DoingThemeConfig>({
     [
       'vuepress-plugin-zooming', // 放大图片
       {
-        selector: '.theme-doing-content img:not(.no-zoom)', // 排除class是no-zoom的图片
+        selector: '.theme-vdoing-content img:not(.no-zoom)', // 排除class是no-zoom的图片
         options: {
           bgColor: 'rgba(0,0,0,0.6)',
         },
