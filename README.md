@@ -1,37 +1,28 @@
-## 欢迎来到Cishy World
+> 前端知识体系(全面)目录用来收集前端基础知识、进阶知识，与重点和难点。
 
-## name: Cishy
 
-## this is a girl!
 
-### Markdown
+##  部署相关
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### docker部署
 
-```markdown
-Syntax highlighted code block
+### menorepo 单一代码库管理方案
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## JS相关
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## TS相关
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ssshishi/Cishy.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+## React相关
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+## CSS相关
+
+
+
