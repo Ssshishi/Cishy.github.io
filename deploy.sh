@@ -7,10 +7,10 @@ set -e
 push_addr='git@github.com/Ssshishi/Ssshishi.github.io.git' # git提交地址
 commit_info=`git describe --all --always --long`
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
-push_branch=gh-pages # 推送的分支
+push_branch=main # 推送的分支
 
 # 生成静态文件
-npm run build
+yarn build
 
 # 进入生成的文件夹
 cd $dist_path
