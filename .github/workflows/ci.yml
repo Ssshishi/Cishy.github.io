@@ -24,8 +24,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Build-and-deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-          CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
+        #   CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
         run: yarn && yarn deploy
 
