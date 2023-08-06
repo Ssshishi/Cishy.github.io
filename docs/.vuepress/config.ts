@@ -6,7 +6,7 @@ import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
 const DOMAIN_NAME = '' // 域名 (不带https)
-const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
+// const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: 'vdoing', // 使用本地主题包
@@ -237,6 +237,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
 
   // 插件配置
+<<<<<<< HEAD
   // plugins: <UserPlugins>[
   //   [
   //     "sitemap", // 网站地图
@@ -244,6 +245,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   //       hostname: WEB_SITE,
   //     },
   //   ],
+=======
+  plugins: <UserPlugins>[
+>>>>>>> 2884361 (feat: edit ci)
 
   //   'vuepress-plugin-baidu-autopush', // 百度自动推送
 
