@@ -237,17 +237,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
 
   // 插件配置
-<<<<<<< HEAD
-  // plugins: <UserPlugins>[
-  //   [
-  //     "sitemap", // 网站地图
-  //     {
-  //       hostname: WEB_SITE,
-  //     },
-  //   ],
-=======
   plugins: <UserPlugins>[
->>>>>>> 2884361 (feat: edit ci)
 
   //   'vuepress-plugin-baidu-autopush', // 百度自动推送
 
